@@ -1,0 +1,92 @@
+-1.bindings 
+*string interpolation
+*class binding
+*style binding
+*property binding 
+*event binding
+*two way binding.
+2.buit-in-pipes
+3.custom pipes
+4.directives
+*nglf
+*ngfor
+*ngswitch
+5.parent to child components
+6.child to parent
+
+string interpolation:---
+
+---> export class AppComponent 
+     {
+     city:string = "hyd";
+     }
+     
+-->   export class AppComponent {
+  path:string ="..C:\Users\VINNU\Downloads.png";                     
+}
+
+html code --> <img src ={{path}} alt="no">
+
+-->export class AppComponent {
+  cname:string ="special aspecial"; 
+  }
+html code -->  <h1 class ={{cname}} > this is heading </h1>     
+css code -->.special {
+  border:3px solid green
+}
+.aspecial{
+  background-color: blue  
+}
+
+-->export class AppComponent {                
+   d:Date = new Date();
+}
+
+html code -->  <h1>{{d}}</h1>
+
+-->export class AppComponent {
+   d:string = new Date().toLocaleDateString();
+}
+
+--> test() {
+     return 10; 
+   }
+   
+   
+
+--->property binding :--
+
+export class AppComponent {                                                                                                                  
+   isdisabled:boolean =false;
+}
+
+html code -->  name: <input type="text">   <button [disabled] =isdisabled>submit </button>
+
+
+
+--->class binding:--
+
+export class AppComponent {
+   isactive:boolean =false;
+}
+
+html code -->     <h1 [class]="isactive?'active':'inactive'"> this is the headline </h1>
+
+css code -->    .active{
+  background-color: blue ;
+  color: white;
+}
+
+.inactive{
+  background-color: gray ;
+  color: white;
+}
+
+
+--->directives:-
+
+===> export class AppComponent {
+ show="true"
+}
+
+html code -->   <h1 *ngIf="show">this is header </h1>
