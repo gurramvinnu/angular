@@ -95,14 +95,35 @@ built-in-pipes:-
 5.lower case--lowerletter
 6.upper case --upper lette
 7.percent --num /percent
-8.slice--it 
-9.async--
+8.slice--it's  
+9.async-- It subscribes to an observable or promise and updates the template automatically.
+
+custom pipe: ng gp test 
+            <h1>{{wish/test:"param1:"param2:}}</h1>
 
 
---->directives:-
+Directives:-- its custom HTML attributes which tell angular to change the struture,style , or behavior of the DOM elements.
 
 ===> export class AppComponent {
  show="true"
 }
 
 html code -->   <h1 *ngIf="show">this is header </h1>
+
+*strutural--change the Dom layout by adding and removing Dom element. 
+*attribute--the behavior or appearance of existing elements by adding or changing attributes.
+*component--used to create reusable, self-contained UI components.
+
+ngclass:--adds and removes a set of css classes
+ngstyle:--add and remove a set of html styles
+ngmodel:-- add two binding to an html form elements.
+
+parent to child components:-- communication between parent and child components using input and output properties.
+to pass data from a parent component to a child component
+
+
+child to parent :-- from a child component to its parent component using output properties and event emitters
+{{child demo()}}
+<app-header # child ></app-header>
+<inputtype="text"[ng model].
+
