@@ -80,6 +80,24 @@ css code -->    .active{
   color: white;
 }
 
+style blinding :--set inline styles on HTML elements dynamically. You can bind to individual style properties.
+<h1 [style.color]="color : red ">text</h1>.
+
+event blinding :--HTML events (e.g., click, change) to methods in your component class. ,mouse,keyboard.
+
+pipes :--Pipes can be used to perform various operations such as filtering, sorting, formatting dates, numbers
+
+built-in-pipes:-
+1.current pipe--salary,money
+2.date pipe--dob,dates 
+3.decimal pipe --
+4.json--it convert to string 
+5.lower case--lowerletter
+6.upper case --upper lette
+7.percent --num /percent
+8.slice--it 
+9.async--
+
 
 --->directives:-
 
