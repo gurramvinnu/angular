@@ -1,4 +1,5 @@
--1.bindings 
+angular:
+1.bindings 
 *string interpolation
 *class binding
 *style binding
@@ -14,19 +15,23 @@
 5.parent to child components
 6.child to parent
 
-string interpolation:---
+angular :-- Angular is a popular open-source framework for building web applications. It is developed and maintained by Google. Angular allows developers to build dynamic, 
+            single-page applications (SPAs) and provides a structured approach to application development.
 
+build with angular :-- E-commerce Websites,mobile application, Enterprise Applications,Single-Page Applications (SPAs).
+
+binding:-- In Angular, bindings are a way to establish communication between components, allowing them to share data and interact with each other.
+
+string interpolation:-- its one way data blinding ,allows to blind data from typscriopt file (mode ) to html 
+                       [model/tsfile]---->[dom/html]
 ---> export class AppComponent 
      {
      city:string = "hyd";
      }
-     
--->   export class AppComponent {
+-->export class AppComponent {
   path:string ="..C:\Users\VINNU\Downloads.png";                     
 }
-
 html code --> <img src ={{path}} alt="no">
-
 -->export class AppComponent {
   cname:string ="special aspecial"; 
   }
@@ -37,24 +42,19 @@ css code -->.special {
 .aspecial{
   background-color: blue  
 }
-
 -->export class AppComponent {                
    d:Date = new Date();
 }
-
 html code -->  <h1>{{d}}</h1>
-
 -->export class AppComponent {
    d:string = new Date().toLocaleDateString();
 }
-
 --> test() {
      return 10; 
    }
-   
-   
 
---->property binding :--
+
+property binding :--HTML element or a directive to a value or an expression.
 
 export class AppComponent {                                                                                                                  
    isdisabled:boolean =false;
@@ -63,20 +63,18 @@ export class AppComponent {
 html code -->  name: <input type="text">   <button [disabled] =isdisabled>submit </button>
 
 
-
---->class binding:--
-
+class binding:-- its aloows add or remove CSS classes to an element 
+code:
 export class AppComponent {
    isactive:boolean =false;
 }
 
-html code -->     <h1 [class]="isactive?'active':'inactive'"> this is the headline </h1>
+html code -->   <h1 [class]="isactive?'active':'inactive'"> this is the headline </h1>
 
 css code -->    .active{
   background-color: blue ;
   color: white;
 }
-
 .inactive{
   background-color: gray ;
   color: white;
